@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formas</title>
+        <link href="css/stils.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Formas un ievadlauku piemērs</h1>
+        <form>
+                        <p>Šodienas datums <input name="datums"></p>
+            <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+                <input onclick="datums.value = new Date();" name="poga" value="DATUMS" type="button">
+            </p>
+            <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
+                <input value="RESET" type="reset">
+            </p>
+            
+<!--            <p>Pēc cik dienām <input name="dienask"></p>            
+            <p>Ja gribi uzzināt kāds datums būs pēc tik dienām, spied pogu
+                <input onclick=" dienask.value = new Date(86400000*dienask.value+datums.value);" name="poga1" value="Dienask" type="button">
+            </p>    -->
+                
+
+        </form>
+        <form>
+            <div>1.skaitlis<input type="text" name="sk1"> </div>
+            <div>
+                <input value="X" name="reiz" onclick="rez.value = sk1.value * sk2.value" type="button">
+            </div>
+            <div>2.skaitlis<input type="text" name="sk2"> </div>
+            <hr>
+            <div>Rezultāts<input name="rez"> </div>
+            <p>Ja gribi izdzēst lodziņu saturu, spied pogu
+                <input value="RESET" type="reset">
+            </p>
+        </form>
+
+        <form>
+            <div>1.skaitlis<input type="text" name="sk1"> </div>
+            <div>
+                <input value="+" name="plus" onclick="sum.value= 1*sk1.value + 1*sk2.value" type="button">
+            </div>
+            <div>2.skaitlis<input type="text" name="sk2"> </div>
+            <hr>
+            <div>Rezultāts<input name="sum"> </div>
+            <p>Ja gribi izdzēst lodziņu saturu, spied pogu
+                <input value="RESET" type="reset">
+            </p>
+        </form>
+
+        <form>    
+            <div>1.skaitlis<input type="text" name="sk1"> </div>
+            <div>
+                <input value="-" name="minuss" onclick="sub.value = sk1.value - sk2.value" type="button">
+            </div>
+            <div>2.skaitlis<input type="text" name="sk2"> </div>
+            <hr>
+            <div>Rezultāts<input name="sub"> </div>
+            <p>Ja gribi izdzēst lodziņu saturu, spied pogu
+                <input value="RESET" type="reset">
+            </p>
+        </form>    
+
+        <form>
+            <div>1.skaitlis<input type="text" name="sk1"> </div>
+            <div>
+                <input value="/" name="dalit ar" onclick="div.value = sk1.value / sk2.value" type="button">
+            </div>
+            <div>2.skaitlis<input type="text" name="sk2"> </div>
+            <hr>
+            <div>Rezultāts<input name="div"> </div>
+            <p>Ja gribi izdzēst lodziņu saturu, spied pogu
+                <input value="RESET" type="reset">
+            </p>
+        </form>
+    </body>
+</html>
